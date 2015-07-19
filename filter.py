@@ -5,16 +5,8 @@ import sys
 # Helper function
 def removeDuplicates(lines):
     output = []
-    used_lines = []
-
     for line in lines:
-        used = False
-        for used_line in used_lines:
-            if line == used_line:
-                used = True
-        if not used:
-            used_lines.append(line)
-            output.append(line)
+        if line not in output: output.append(line)
 
     return output
 
