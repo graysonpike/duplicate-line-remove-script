@@ -3,6 +3,7 @@ import sys
 
 
 # Helper function
+# Credit to Introvert for this method
 def removeDuplicates(lines):
     output = []
     for line in lines:
